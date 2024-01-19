@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/base/head.html', {
+    "title": "Про компанію"
+})
+
+<body class="not-is-home">
+    <div class="wrapper">
+        @@include('html/base/header.html')
+
+        <main class="page">
+            <div data-observ></div>
+            
+            <div class="page__container">
+                @@include('html/elements/breadcrumbs.html', {
+                    title: 'Про компанію'
+                })
+                @@include('html/elements/title.html', {
+                    title: 'Про компанію'
+                })
+                @@include('html/pages/about.html')
+            </div>
+
+            @@include('html/sections/full-slider.html')
+            @@include('html/sections/advantages.html')
+            @@include('html/sections/steps.html')
+            @@include('html/sections/block-text.html')
+        </main>
+    
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

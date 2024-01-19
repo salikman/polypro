@@ -1,0 +1,58 @@
+.page-404 {
+    display: flex;
+    flex-direction: column;
+    padding: rem(60) 0;
+
+    &__title {
+        margin-bottom: rem(40);
+        color: rgba($orangeColor, .7);
+        font-family: Rubik;
+        font-size: 130px;
+        @include adaptiv-font(130, 80);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 95%; /* 123.5px */
+        text-transform: capitalize;
+    }
+
+    &__subtitle {
+        margin-bottom: rem(40);
+        color: #FFF;
+        font-family: Gilroy;
+        @include adaptiv-font(20, 16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__link {
+        width: max-content;
+        padding: rem(10) rem(20);
+        border-radius: 2px;
+        background: $orangeColor;
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__text {
+        margin-top: rem(120);
+        color: #FFF;
+        font-family: Gilroy;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @include media(991) {
+            margin-top: rem(60);
+        }
+
+        a {
+            color: $orangeColor;
+        }
+    }
+}

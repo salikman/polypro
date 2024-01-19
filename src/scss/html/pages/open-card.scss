@@ -1,0 +1,264 @@
+.product {
+    &-row {
+        display: grid;
+        grid-template-columns: rem(540) 1fr;
+        gap: rem(20);
+
+        @include media(1140) {
+            grid-template-columns: rem(340) 1fr;
+        }
+        @include media(747) {
+            grid-template-columns: 100%;
+        }
+    }
+
+    &__gallery {
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper {
+            width: 100%;
+            height: rem(540);
+            margin-left: auto;
+            margin-right: auto;
+
+            @include media(1140) {
+                height: rem(340);
+            }
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .productSwiper2 {
+            height: rem(540);
+            width: 100%;
+
+            @include media(1140) {
+                height: rem(340);
+            }
+        }
+
+        .productSwiper {
+            height: rem(170);
+            box-sizing: border-box;
+            padding: 10px 0;
+
+            @include media(1140) {
+                height: rem(100);
+            }
+            @include media(747) {
+                height: rem(112);
+            }
+        }
+
+        .productSwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .productSwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: rem(40);
+    }
+
+    &__meta {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+
+        .article, .brand, .materials, .manufacturer {
+            display: flex;
+            gap: rem(5);
+
+            span {
+                color: #FFF;
+                font-variant-numeric: lining-nums proportional-nums;
+                font-family: Raleway;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%; /* 23.4px */
+            }
+
+            p, a {
+                color: $orangeColor;
+                font-variant-numeric: lining-nums proportional-nums;
+                font-family: Raleway;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__panel {
+        display: flex;
+        align-items: center;
+        gap: rem(40);
+
+        @include media(991) {
+            flex-wrap: wrap;
+            gap: rem(20);
+        }
+
+        .price {
+            color: $orangeColor;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Raleway;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 26px */
+
+            @include media(991) {
+                width: 100%;
+            }
+        }
+
+        .counter {
+            display: flex;
+            align-items: center;
+            gap: rem(15);
+            
+            button {
+                background: transparent;
+                color: #FFF;
+                border: none;
+                outline: none;
+                font-variant-numeric: lining-nums proportional-nums;
+                font-family: Raleway;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%; /* 23.4px */
+                transition: $standartTrans;
+
+                &:hover, &:focus {
+                    color: $orangeColor;
+                }
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: rem(30);
+                padding: rem(4);
+                border-radius: 2px;
+                border: 1px solid rgba(231, 66, 39, 0.40);
+                color: #FFF;
+                font-variant-numeric: lining-nums proportional-nums;
+                font-family: Raleway;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%; /* 20.8px */
+            }
+        }
+
+        .add {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: rem(10);
+            width: max-content;
+            padding: rem(12) rem(20);
+            background: $orangeColor;
+            border-radius: 2px;
+            border: 1px solid $orangeColor;
+            transition: $standartTrans;
+    
+            span {
+                color: #FFF;
+                font-family: Raleway;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+    
+            svg {
+                width: rem(18);
+                height: rem(18);
+            }
+        }
+
+        .favorite {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: rem(24);
+            height: rem(24);
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+
+        span {
+            color: #FFF;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Raleway;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 23.4px */
+        }
+
+        .text {
+            color: #FFF;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 20.8px */
+
+            max-height: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/base/head.html', {
+    "title": "Оформлення замовлення"
+})
+
+<body class="not-is-home">
+    <div class="wrapper">
+        @@include('html/base/header.html')
+
+        <main class="page">
+            <div data-observ></div>
+            
+            <div class="page__container">
+                @@include('html/elements/breadcrumbs.html', {
+                    title: 'Оформлення замовлення'
+                })
+                @@include('html/elements/title.html', {
+                    title: 'Оформлення замовлення'
+                })
+                @@include('html/pages/order.html')
+            </div>
+
+            @@include('html/sections/block-text.html')
+        </main>
+    
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

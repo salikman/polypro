@@ -1,0 +1,125 @@
+.steps {
+    position: relative;
+    padding: rem(50) 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: rem(283);
+        left: 0;
+        width: 100%;
+        height: rem(3);
+        background: rgba($orangeColor, .4);
+
+        @include media(991) {
+            display: none;
+        }
+    }
+
+    &-wrapper {
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: rem(-150);
+            left: rem(-340);
+            z-index: -1;
+            width: rem(870);
+            height: rem(143);
+            border-radius: rem(870);
+            opacity: .6;
+            background: $orangeColor;
+            filter: blur(rem(240));
+        }
+    }
+
+    &__title {
+        max-width: rem(710);
+        margin-bottom: rem(50);
+
+        @include media(991) {
+            margin-bottom: rem(30);
+        }
+    }
+
+    &__list {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(20);
+
+        @include media(991) {
+            grid-template-columns: repeat(4, rem(220));
+            width: 100%;
+            overflow: auto;
+            padding-bottom: 20px;
+        }
+
+        .step {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+            @include media(991) {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: rem(57);
+                    left: 0;
+                    width: calc(100% + rem(20));
+                    height: rem(3);
+                    background: rgba($orangeColor, .4);
+                }
+            }
+
+            span {
+                position: relative;
+                margin-bottom: rem(50);
+                color: rgba($orangeColor, .2);
+                font-family: Rubik;
+                font-size: 80px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 95%; /* 76px */
+                text-transform: capitalize;
+
+                @include media(991) {
+                    margin-bottom: rem(30);
+                    font-size: 60px;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: rem(8);
+                    height: rem(8);
+                    background: $orangeColor;
+                    border-radius: 50%;
+
+                    @include media(991) {
+                        bottom: rem(-5);
+                    }
+                }
+            }
+
+            h4 {
+                margin-bottom: rem(10);
+                color: $orangeColor;
+                @include adaptiv-font(22, 18);
+                font-style: normal;
+                font-weight: 600;
+                line-height: 130%; /* 28.6px */
+            }
+
+            p {
+                color: #F2F2F2;
+                @include adaptiv-font(18, 14);
+                font-weight: 500;
+                line-height: 130%; /* 23.4px */
+            }
+        }
+    }
+}

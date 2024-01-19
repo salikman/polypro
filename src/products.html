@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/base/head.html', {
+    "title": "Автомобілі Acura ilx 2015-2022"
+})
+
+<body class="not-is-home">
+    <div class="wrapper">
+        @@include('html/base/header.html')
+
+        <main class="page">
+            <div data-observ></div>
+            
+            <div class="page__container">
+                @@include('html/elements/breadcrumbs.html', {
+                    title: 'Автомобілі Acura ilx 2015-2022'
+                })
+                @@include('html/elements/title.html', {
+                    title: 'Автомобілі Acura ilx 2015-2022'
+                })
+                @@include('html/pages/products.html')
+            </div>
+
+            @@include('html/sections/block-text.html')
+        </main>
+    
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

@@ -1,0 +1,8 @@
+.section-title {
+    color: #FFF;
+    font-family: Rubik;
+    @include adaptiv-font(40, 22);
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: capitalize;
+}

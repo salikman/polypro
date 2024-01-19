@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/base/head.html', {
+    "title": "404"
+})
+
+<body class="not-is-home">
+    <div class="wrapper">
+        @@include('html/base/header.html')
+
+        <main class="page">
+            <div data-observ></div>
+            
+            <div class="page__container">
+                @@include('html/pages/404.html')
+            </div>
+        </main>
+    
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

@@ -1,0 +1,70 @@
+.guarantees {
+    margin-bottom: rem(120);
+
+    @include media(991) {
+        margin-bottom: rem(60);
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+
+        p, ul {
+            color: #FFF;
+            font-family: Raleway;
+            font-size: 18px;
+            @include adaptiv-font(18, 16);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 23.4px */
+        }
+
+        ul {
+            padding-left: rem(30);
+
+            li {
+                list-style: disc;
+            }
+        }
+
+        .big {
+            @include adaptiv-font(22, 20);
+        }
+    }
+
+    &__text-big {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+        margin-top: rem(120);
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 28px */
+
+        @include media(991) {
+            margin-top: rem(60);
+        }
+
+        .tt {
+            padding: rem(20) 0;
+            color: $orangeColor;
+            font-family: Raleway;
+            @include adaptiv-font(22, 18);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 30.8px */
+        }
+
+        ul {
+            padding-left: rem(30);
+
+            li {
+                list-style: disc;
+            }
+        }
+    }
+}

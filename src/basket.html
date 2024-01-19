@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/base/head.html', {
+    "title": "Вибрані товари"
+})
+
+<body class="not-is-home">
+    <div class="wrapper">
+        @@include('html/base/header.html')
+
+        <main class="page">
+            <div data-observ></div>
+            
+            <div class="page__container">
+                @@include('html/elements/breadcrumbs.html', {
+                    title: 'Вибрані товари'
+                })
+                @@include('html/elements/title.html', {
+                    title: 'Вибрані товари'
+                })
+                @@include('html/pages/basket.html')
+            </div>
+
+            @@include('html/sections/block-text.html')
+        </main>
+    
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

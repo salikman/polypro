@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css?_v=20240119130343" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240119130343" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://www.jqueryscript.net/demo/dropdown-replacement-just-select/css/justselect.css?_v=20240119130343">
+    <link rel="stylesheet" href="/css/style.min.css?_v=20240119130343">
+    <title>Вибрані товари</title>
+</head>
+
+<body class="not-is-home">
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container">
+        <div class="header-wrapper">
+            <div class="header-top">
+                <div class="header__address">
+                    <svg><use href="img/icons/icons.svg#icon-map"></use></svg>
+                    <p>Українa, м. Шостка, вул. Прорізна, 20.</p>
+                    <p>Пн-Сб: 09:00 - 21:00</p>
+                </div>
+                <div class="header__links">
+                    <a href="#">Про компанію</a>
+                    <a href="#">Гарантії</a>
+                    <a href="#">Контакти</a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header__collapse"><span></span></div>
+                
+                <a href="/" class="header__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="PolyPro"></picture></a>
+                
+                <div class="header__catalog">
+                    <div class="catalog-title">
+                        <svg><use href="img/icons/icons.svg#icon-grid"></use></svg>
+                        <span>Каталог</span>
+                    </div>
+                    <div class="catalog-list">
+                        <div class="catalog__brand">
+                            <ul>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            </ul>
+                            <a href="#" class="catalog__link">
+                                <span>Дивитись всі</span>
+                                <svg><use href="img/icons/icons.svg#icon-arrow-color"></use></svg>
+                            </a>
+                        </div>
+                        <div class="catalog__car">
+                            <ul>
+                                <li><a href="#"><picture><source srcset="img/car-1.webp" type="image/webp"><img src="img/car-1.png" alt=""></picture><span>ILX</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/car-1.webp" type="image/webp"><img src="img/car-1.png" alt=""></picture><span>Legend</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/car-1.webp" type="image/webp"><img src="img/car-1.png" alt=""></picture><span>Mdx</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/car-1.webp" type="image/webp"><img src="img/car-1.png" alt=""></picture><span>Rdx</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/car-1.webp" type="image/webp"><img src="img/car-1.png" alt=""></picture><span>Rl</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/car-1.webp" type="image/webp"><img src="img/car-1.png" alt=""></picture><span>Rsx</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/car-1.webp" type="image/webp"><img src="img/car-1.png" alt=""></picture><span>Tlx</span></a></li>
+                                <li><a href="#"><picture><source srcset="img/car-1.webp" type="image/webp"><img src="img/car-1.png" alt=""></picture><span>Tsx</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header__search">
+                    <span class="search-toggle"><svg><use href="img/icons/icons.svg#icon-search"></use></svg></span>
+                    <div class="search-container">
+                        <div class="search-back">
+                            <svg><use href="img/icons/icons.svg#icon-arrow"></use></svg>
+                            <span>Назад</span>
+                        </div>
+                        <div class="search-box">
+                            <label>
+                                <input type="text" name="" id="" placeholder="Поиск по сайту">
+                            </label>
+                            <button>Пошук</button>
+                        </div>
+                        <!-- <div class="search-result">
+                            <div class="result-list">
+                                <a href="#" class="item">
+                                    <div class="item-wrapper">
+                                        <div class="item-img"><picture><source srcset="img/products/products.webp" type="image/webp"><img src="img/products/products.png" alt=""></picture></div>
+                                        <div class="item-info">
+                                            <ul class="item__tags">
+                                                <li>Acura,</li>
+                                                <li>ilx</li>
+                                            </ul>
+                                            <div class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</div>
+                                            <div class="item__article">Код товару: PP-0708</div>
+                                            <div class="item__price">890.00 грн</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="item">
+                                    <div class="item-wrapper">
+                                        <div class="item-img"><picture><source srcset="img/products/products.webp" type="image/webp"><img src="img/products/products.png" alt=""></picture></div>
+                                        <div class="item-info">
+                                            <ul class="item__tags">
+                                                <li>Acura,</li>
+                                                <li>ilx</li>
+                                            </ul>
+                                            <div class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</div>
+                                            <div class="item__article">Код товару: PP-0708</div>
+                                            <div class="item__price">890.00 грн</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="item">
+                                    <div class="item-wrapper">
+                                        <div class="item-img"><picture><source srcset="img/products/products.webp" type="image/webp"><img src="img/products/products.png" alt=""></picture></div>
+                                        <div class="item-info">
+                                            <ul class="item__tags">
+                                                <li>Acura,</li>
+                                                <li>ilx</li>
+                                            </ul>
+                                            <div class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</div>
+                                            <div class="item__article">Код товару: PP-0708</div>
+                                            <div class="item__price">890.00 грн</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="item">
+                                    <div class="item-wrapper">
+                                        <div class="item-img"><picture><source srcset="img/products/products.webp" type="image/webp"><img src="img/products/products.png" alt=""></picture></div>
+                                        <div class="item-info">
+                                            <ul class="item__tags">
+                                                <li>Acura,</li>
+                                                <li>ilx</li>
+                                            </ul>
+                                            <div class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</div>
+                                            <div class="item__article">Код товару: PP-0708</div>
+                                            <div class="item__price">890.00 грн</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="header__lang">
+                    <div class="lang-current">
+                        <span>УКР</span>
+                        <svg><use href="img/icons/icons.svg#icon-arrow-color"></use></svg>
+                    </div>
+                    <ul class="lang-dropdown">
+                        <li><a class="active" href="#">УКР</a></li>
+                        <li><a href="#">ENG</a></li>
+                        <li><a href="#">РУ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="header__phone">
+                    <div class="phone-toggle">
+                        <span>+38 099 348 87 54</span>
+                        <svg><use href="img/icons/icons.svg#icon-arrow"></use></svg>
+                    </div>
+                    <ul class="phone-dropdown">
+                        <li><a href="tel:+38(067)4188704">+38 (067) 418 87 04</a></li>
+                        <li><a href="tel:+38(099)3488754">+38 (099) 348 87 54</a></li>
+                        <li><a href="tel:+38(068)2426263">+38 (068) 242 62 63</a></li>
+                    </ul>
+                    <a href="#phone-modal" class="phone-modal">замовити дзвінок</a>
+                </div>
+                
+                <div class="header__favorites">
+                    <svg><use href="img/icons/icons.svg#icon-heart"></use></svg>
+                    <span>Избранное</span>
+                </div>
+                
+                <div class="header__basket">
+                    <svg><use href="img/icons/icons.svg#icon-basket"></use></svg>
+                    <span>Корзина</span>
+                    <div><p>3</p></div>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <div class="menu-mobile__catalog">
+                    <div class="catalog-title">
+                        <svg><use href="img/icons/icons.svg#icon-grid"></use></svg>
+                        <span>Каталог</span>
+                        <svg class="right"><use href="img/icons/icons.svg#icon-arrow"></use></svg>
+                    </div>
+                    <div class="catalog-list">
+                        <ul>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                            <li><a href="#"><picture><source srcset="img/brand-1.webp" type="image/webp"><img src="img/brand-1.png" alt=""></picture><span>Acura</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-mobile__links">
+                    <a href="#">Про компанію</a>
+                    <a href="#">Гарантії</a>
+                    <a href="#">Контакти</a>
+                </div>
+
+                <div class="menu-mobile__lang">
+                    <a class="active" href="#">УКР</a>
+                    <a href="#">ENG</a>
+                    <a href="#">РУ</a>
+                </div>
+
+                <div class="menu-mobile__address">
+                    <svg><use href="img/icons/icons.svg#icon-map"></use></svg>
+                    <p>Українa, м. Шостка, вул. Прорізна, 20. <br>Пн-Сб: 09:00 - 21:00</p>
+                </div>
+
+                <div class="menu-mobile__phones">
+                    <ul>
+                        <li><a href="#">+38 (067) 418 87 04</a></li>
+                        <li><a href="#">+38 (099) 348 87 54</a></li>
+                        <li><a href="#">+38 (068) 242 62 63</a></li>
+                    </ul>
+                    <a href="#phone-modal">Замовити дзвінок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        <main class="page">
+            <div data-observ></div>
+            
+            <div class="page__container">
+                <div class="breadcrumbs">
+    <ul class="breadcrumbs-list">
+        <li><a href="/"><svg><use href="img/icons/icons.svg#icon-home"></use></svg></a></li>
+        <li>Вибрані товари</li>
+    </ul>
+</div>
+                <div class="page-title">
+    <h1>Вибрані товари</h1>
+</div>
+                <div class="page-content">
+    <div class="basket">
+        <!-- <div class="basket__text">Ви не додали до вибраного жодного товару</div> -->
+        <div class="basket-header">
+            <div class="basket__number">6 товарів</div>
+            <a class="basket__delete" href="#">
+                <span></span>
+                <svg><use href="img/icons/icons.svg#icon-delete"></use></svg>
+            </a>
+        </div>
+
+        <div class="basket__list list-view">
+            <div class="products-item">
+    <div class="item">
+        <div class="item__shared">
+            <span class="popular">Популярний</span>
+        </div>
+        <div class="item__favorites"><svg><use href="img/icons/icons.svg#icon-heart"></use></svg></div>
+        <div class="item__remove"><svg><use href="img/icons/icons.svg#icon-plus"></use></svg></div>
+        <div class="item__img"><picture><source srcset="img/products/products.webp" type="image/webp"><img src="img/products/products.png" alt=""></picture></div>
+        <div class="item-info">
+            <ul class="item__tag">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">ilx</a></li>
+            </ul>
+            <a href="#" class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</a>
+            <div class="item__code">Код товару: PP-0708</div>
+            <div class="item-panel">
+                <div class="item__box">
+                    <span class="price">890.00 грн</span>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="quantity" id="quantity">1</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <a href="#" class="item__add">
+                    <span>В корзину</span>
+                    <svg><use href="img/icons/icons.svg#icon-basket-white"></use></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="products-item">
+    <div class="item">
+        <div class="item__shared">
+            <span class="popular">Популярний</span>
+        </div>
+        <div class="item__favorites"><svg><use href="img/icons/icons.svg#icon-heart"></use></svg></div>
+        <div class="item__remove"><svg><use href="img/icons/icons.svg#icon-plus"></use></svg></div>
+        <div class="item__img"><picture><source srcset="img/products/products.webp" type="image/webp"><img src="img/products/products.png" alt=""></picture></div>
+        <div class="item-info">
+            <ul class="item__tag">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">ilx</a></li>
+            </ul>
+            <a href="#" class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</a>
+            <div class="item__code">Код товару: PP-0708</div>
+            <div class="item-panel">
+                <div class="item__box">
+                    <span class="price">890.00 грн</span>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="quantity" id="quantity">1</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <a href="#" class="item__add">
+                    <span>В корзину</span>
+                    <svg><use href="img/icons/icons.svg#icon-basket-white"></use></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="products-item">
+    <div class="item">
+        <div class="item__shared">
+            <span class="popular">Популярний</span>
+        </div>
+        <div class="item__favorites"><svg><use href="img/icons/icons.svg#icon-heart"></use></svg></div>
+        <div class="item__remove"><svg><use href="img/icons/icons.svg#icon-plus"></use></svg></div>
+        <div class="item__img"><picture><source srcset="img/products/products.webp" type="image/webp"><img src="img/products/products.png" alt=""></picture></div>
+        <div class="item-info">
+            <ul class="item__tag">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">ilx</a></li>
+            </ul>
+            <a href="#" class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</a>
+            <div class="item__code">Код товару: PP-0708</div>
+            <div class="item-panel">
+                <div class="item__box">
+                    <span class="price">890.00 грн</span>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="quantity" id="quantity">1</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <a href="#" class="item__add">
+                    <span>В корзину</span>
+                    <svg><use href="img/icons/icons.svg#icon-basket-white"></use></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="products-item">
+    <div class="item">
+        <div class="item__shared">
+            <span class="popular">Популярний</span>
+        </div>
+        <div class="item__favorites"><svg><use href="img/icons/icons.svg#icon-heart"></use></svg></div>
+        <div class="item__remove"><svg><use href="img/icons/icons.svg#icon-plus"></use></svg></div>
+        <div class="item__img"><picture><source srcset="img/products/products.webp" type="image/webp"><img src="img/products/products.png" alt=""></picture></div>
+        <div class="item-info">
+            <ul class="item__tag">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">ilx</a></li>
+            </ul>
+            <a href="#" class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</a>
+            <div class="item__code">Код товару: PP-0708</div>
+            <div class="item-panel">
+                <div class="item__box">
+                    <span class="price">890.00 грн</span>
+                    <div class="counter">
+                        <button class="decrement">-</button>
+                        <span class="quantity" id="quantity">1</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <a href="#" class="item__add">
+                    <span>В корзину</span>
+                    <svg><use href="img/icons/icons.svg#icon-basket-white"></use></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+            </div>
+
+            <section class="block-text">
+    <div class="block-text__container">
+        <div class="block-text-wrapper">
+            <h2 class="block-text__title section-title">поліуретанові сайлентблоки в Україні</h2>
+            <div class="block-text__content">
+                <p>Компанія «ПоліПро» виробляє і продає власну продукцію в магазині в м. Шостка. Купити запчастини на авто з доставкою не тільки Україною, а й у будь-яку країну, можна в цьому інтернет-магазині або через нашу сторінку на Фейсбуці. Також у нас є офіційні партнери в цих і деяких інших містах.</p>
+                <p>В Україні поліуретанові сайлентблоки можна купити різної якості. Тому хтось дуже задоволений своєю покупкою, а хтось залишається дуже незадоволений. Деякі орієнтуються на колір виробів, але якість від цього не залежить. Виробник може додавати пігмент під час виробництва запчастини з поліуретану будь-якого кольору.</p>
+                <p>Серед основних деталей у підвісці автомобіля, де застосовуються поліуретанові матеріали, виділяють:</p>
+                <ul>
+                    <li>Втулки важелів передньої та задньої підвіски</li>
+                    <li>Стабілізатори поперечної стійкості та сайлентблоки</li>
+                    <li>Втулки реактивної тяги</li>
+                    <li>Пильовики кульових опор та шарнірних з'єднань (ШРУСів)</li>
+                    <li>Деталі пневмопідвіски</li>
+                    <li>Втулки кріплення стійок</li>
+                    <li>Обмежувачі ходу підвіски</li>
+                </ul>
+                <p>Крім деталей підвіски поліуретанові запчастини також застосовуються в інших вузлах та агрегатах автомобіля, замінюючи розхідники із звичайної гуми. До них відносяться: подушки двигуна, демпферний шків коленвала, сайлентблоки підрамників, втулки тяг, кріплення з'єднань вузлів та ін.</p>
+                <p>Сфера застосування не обмежується лише легковими автомобілями. Купити поліуретанові сайлентблоки та втулки можна також для вантажних автомобілів, причепів та спецтехніки. Враховуючи велику масу транспортних засобів, нами використовується поліуретановий матеріал, завдяки чому підвищується надійність вузлів у порівнянні із звичайною гумою.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+    
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer-wrapper">
+            <a href="/" class="footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="PolyPro"></picture></a>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <ul class="footer__menu">
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Гарантії</a></li>
+                        <li><a href="#">Асортимент</a></li>
+                        <li><a href="#">Технології</a></li>
+                        <li><a href="#">Індивідуальні рішення</a></li>
+                        <li><a href="#">Власне виробництво</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center">
+                    <div class="footer__text">
+                        <span>Адреса</span>
+                        <p>Украина, г. Шостка, <br>ул. Некрасова, 16.<br>Магазин "Автоподвеска"</p>
+                    </div>
+                    <div class="footer__text">
+                        <span>Графік</span>
+                        <p>Ми працюємо з понеділка до п'ятниці.<br>Час роботи з 8:00 до 17:00<br>Субота та неділя вихідні.</p>
+                    </div>
+                    <div class="footer__social">
+                        <span>Ми в соцмережах</span>
+                        <ul>
+                            <li><a href="#"><svg><use href="img/icons/icons.svg#instagram"></use></svg></a></li>
+                            <li><a href="#"><svg><use href="img/icons/icons.svg#facebook"></use></svg></a></li>
+                            <li><a href="#"><svg><use href="img/icons/icons.svg#telegram"></use></svg></a></li>
+                            <li><a href="#"><svg><use href="img/icons/icons.svg#viber"></use></svg></a></li>
+                            <li><a href="#"><svg><use href="img/icons/icons.svg#youtybe"></use></svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="footer__phones">
+                        <ul>
+                            <li><a href="#">+38 (067) 418 87 04</a></li>
+                            <li><a href="#">+38 (099) 348 87 54</a></li>
+                            <li><a href="#">+38 (068) 242 62 63</a></li>
+                        </ul>
+                        <a href="#phone-modal">Замовити дзвінок</a>
+                    </div>
+                    <a href="mailto:polyurethane.pro@gmail.com" class="footer__email">polyurethane.pro@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <p>Copyright © 2019-2020 <br>ФЛП Цыт А.В.<br>Всі права захищені.</p>
+                <ul>
+                    <li><a href="#">Угода користувача</a></li>
+                    <li><a href="#">Положення про обробку та захист персональних даних</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20240119130343" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js?_v=20240119130343" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240119130343" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://www.jqueryscript.net/demo/dropdown-replacement-just-select/js/justselect.min.js?_v=20240119130343"></script>
+<script src="/js/app.min.js?_v=20240119130343"></script>
+</body>
+</html>

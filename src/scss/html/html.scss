@@ -1,0 +1,27 @@
+@import './base/header';
+@import './base/footer';
+
+// elements
+@import './elements/breadcrumbs';
+@import './elements/products-item';
+@import './elements/title';
+
+// pages
+@import './pages/catalog';
+@import './pages/products';
+@import './pages/open-card';
+@import './pages/404';
+@import './pages/about';
+@import './pages/guarantees';
+@import './pages/contacts';
+@import './pages/basket';
+
+// sections
+@import './sections/block-text';
+@import './sections/slider';
+@import './sections/advantages';
+@import './sections/products';
+@import './sections/reviews';
+@import './sections/full-slider';
+@import './sections/feedback';
+@import './sections/steps';

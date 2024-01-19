@@ -1,0 +1,51 @@
+.breadcrumbs {
+    padding: rem(10) 0 rem(30);
+
+    &-list {
+        display: flex;
+        gap: rem(10);
+        flex-wrap: wrap;
+
+        li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: #CDCDCD;
+            font-family: Gilroy;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+    
+            &:not(:first-child) {
+                padding-left: rem(34);
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: rem(24);
+                    height: rem(24);
+                    background: url('../img/icons/icons.svg#icon-arrow') no-repeat center / contain;
+                    transform: rotate(-90deg);
+                }
+            }
+    
+            a {
+                display: flex;
+                align-items: center;
+                color: $blackColor;
+                transition: $standartTrans;
+    
+                &:hover {
+                    color: $firstAccentColor;
+                }
+
+                svg {
+                    width: rem(18);
+                    height: rem(18);
+                }
+            }
+        }
+    }
+}

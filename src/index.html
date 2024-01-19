@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/base/head.html', {
+    "title": "Home"
+})
+
+<body class="is-home">
+    <div class="wrapper">
+        @@include('html/base/header.html')
+
+        <main class="page">
+            <div data-observ></div>
+            
+            @@include('html/sections/slider.html')
+            @@include('html/sections/advantages.html')
+            @@include('html/sections/products.html')
+            @@include('html/sections/reviews.html')
+            @@include('html/sections/full-slider.html')
+            @@include('html/sections/feedback.html')
+            @@include('html/sections/steps.html')
+            @@include('html/sections/block-text.html')
+        </main>
+    
+        @@include('html/base/footer.html', {})
+    </div>
+
+    @@include('html/base/scripts.html')
+</body>
+</html>

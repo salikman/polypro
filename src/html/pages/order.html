@@ -1,0 +1,142 @@
+<div class="page-content">
+    <div class="basket">
+        <!-- <div class="basket__text">Ви не додали до вибраного жодного товару</div> -->
+        <div class="basket-header">
+            <div class="basket__box">Склад замовлення</div>
+            <a class="basket__delete" href="#">
+                <span>Очистити корзину</span>
+                <svg><use href="@img/icons/icons.svg#icon-delete"></use></svg>
+            </a>
+        </div>
+
+        <div class="basket__list list-view">
+            <div class="products-item">
+                <div class="item">
+                    <div class="item__shared">
+                        <span class="popular">Популярний</span>
+                    </div>
+                    <div class="item__remove"><svg><use href="@img/icons/icons.svg#icon-plus"></use></svg></div>
+                    <div class="item__img"><img src="@img/products/products.png" alt=""></div>
+                    <div class="item-info">
+                        <ul class="item__tag">
+                            <li><a href="#">Acura</a></li>
+                            <li><a href="#">ilx</a></li>
+                        </ul>
+                        <a href="#" class="item__title">Поліуретанова опора переднього амортизатора Audi A6 C4 1994-1997</a>
+                        <div class="item__code">Код товару: PP-0708</div>
+                        <div class="item-panel">
+                            <div class="item__box">
+                                <span class="price">890.00 грн</span>
+                                <div class="counter">
+                                    <button class="decrement">-</button>
+                                    <span class="quantity" id="quantity">1</span>
+                                    <button class="increment">+</button>
+                                </div>
+                            </div>
+                            <a href="#" class="item__add">
+                                <span>В корзину</span>
+                                <svg><use href="@img/icons/icons.svg#icon-basket-white"></use></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket-total">
+            <span>Всьго до сплати :</span>
+            <p>595 <i>грн</i></p>
+        </div>
+
+        <div class="basket-form">
+            <div class="form-col">
+                <div class="form-box">
+                    <div class="form-box__title">Оформлення замовлення</div>
+                    <label class="form-box__input">
+                        <input type="text" placeholder="Прізвище, ім'я та по батькові повністю *">
+                    </label>
+                    <label class="form-box__checkbox">
+                        <input type="checkbox">
+                        <i></i>
+                        <span>Прошу перевірити підібрані деталі згідно мого Vin-code</span>
+                    </label>
+                    <label class="form-box__input">
+                        <input type="text" placeholder="Vin-code авто або побажання до замовлення">
+                    </label>
+                    <label class="form-box__input">
+                        <input type="text" placeholder="Email *">
+                    </label>
+                    <label class="form-box__input">
+                        <input type="text" placeholder="Номер телефона *">
+                    </label>
+                </div>
+    
+                <div class="form-box">
+                    <div class="form-box__title">Оплата</div>
+                    <label class="form-box__radio">
+                        <input type="radio" name="payment" id="">
+                        <i></i>
+                        <span>Накладений платіж</span>
+                    </label>
+                    <label class="form-box__radio">
+                        <input type="radio" name="payment" id="">
+                        <i></i>
+                        <span>Оплата на рахунок/span>
+                    </label>
+                    <label class="form-box__radio">
+                        <input type="radio" name="payment" id="">
+                        <i></i>
+                        <span>Online</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-col">
+                <div class="form-box">
+                    <div class="form-box__title">Доставка</div>
+                    <label class="form-box__radio">
+                        <input type="radio" name="delivery" id="">
+                        <i></i>
+                        <span>Доставка по місту Шостка(безкоштовно)</span>
+                    </label>
+                    <label class="form-box__radio">
+                        <input type="radio" name="delivery" id="">
+                        <i></i>
+                        <span>Кур'єрська доставка Нова Пошта (вкажіть адресу в коментарі)</span>
+                    </label>
+                    <label class="form-box__radio">
+                        <input type="radio" name="delivery" id="">
+                        <i></i>
+                        <span>Нова Пошта</span>
+                    </label>
+
+                    <label class="form-box__select">
+                        <select class="justselect">
+                            <option selected="selected" value="jquery">Місто</option>
+                            <option value="css">CSS3</option>
+                            <option value="html">HTML5</option>
+                        </select>
+                    </label>
+                    <label class="form-box__select">
+                        <select class="justselect">
+                            <option selected="selected" value="jquery">Відділення</option>
+                            <option value="css">CSS3</option>
+                            <option value="html">HTML5</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-box">
+                    <label class="form-box__textarea">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Примітки до замовлення. Побажання, уточнення, питання."></textarea>
+                    </label>
+                </div>
+
+                <div class="form-box">
+                    <label class="form-box__button">
+                        <button>Оформити замовлення</button>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,149 @@
+body {
+
+    &.lock {
+        overflow: hidden;
+        touch-action: none;
+    }
+}
+
+// Базовые анимации:
+// @import "keyframes";
+
+// Стили для полноэкранного блока:
+@import "fullscreen";
+
+// Стили основного ограничивающего контейнера =================================
+/*
+  * (i) Стили будут применяться ко 
+  * всем классам содержащим *__container
+  * Например header__container, main__container и т.д.
+  */
+[class*="__container"] {
+    max-width: rem($containerWidth);
+    margin: 0 auto;
+    padding: 0 rem($mainOffset);
+}
+
+// Стили отзывчивых картинок (IBG) ============================================
+[class*="-ibg"] {
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+[class*="-ibg_contain"] {
+    img {
+        object-fit: contain;
+    }
+}
+
+// Стили для обертки модальных окон ===========================================
+[class*="_overlay-bg"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: $standartTrans; // Можно задать свою анимацию
+    z-index: 2000; // Увеличить если нужно
+    padding: rem(60) rem(15); // Изменить по макету
+    overflow-y: auto;
+
+    @include media(768) {
+        &::-webkit-scrollbar {
+            // Удалить из за ненадобности
+            display: none;
+        }
+    }
+
+    &._is-open {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+main {
+    position: relative;
+    padding-top: rem(150);
+    padding-bottom: rem(60);
+    overflow: hidden;
+
+    @media (max-width: 1229px) {
+        padding-top: rem(100);
+    }
+    @media (max-width: 767px) {
+        padding-top: rem(60);
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        right: rem(64);
+        top: rem(400);
+        width: 680px;
+        height: 201px;
+        border-radius: 680px;
+        opacity: 0.6;
+        background: #1B2AF0;
+        filter: blur(239.83175659179688px);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: rem(-153);
+        bottom: 20%;
+        width: 868.984px;
+        height: 209.222px;
+        transform: rotate(-18.847deg);
+        border-radius: 868.984px;
+        opacity: 0.6;
+        background: #E74227;
+        filter: blur(239.83175659179688px);
+    }
+}
+
+// Оболочка ===================================================================
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: clip; // clip - если используется в проекте position: sticky
+}
+
+.page {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 auto;
+
+    [data-observ] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: rem(2);
+        background: transparent;
+        pointer-events: none;
+    }
+
+    &_start {
+        padding-top: rem($headerHeight);
+    }
+
+    &-content {
+        padding: rem(40) 0;
+
+        @include media(991) {
+            padding: rem(30) 0;
+        }
+    }
+}

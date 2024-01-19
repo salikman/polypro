@@ -1,0 +1,34 @@
+.block-text {
+    padding: rem(60) 0;
+
+    &__title {
+        margin-bottom: rem(50);
+
+        @include media(991) {
+            margin-bottom: rem(30);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: rem(5);
+        font-size: rem(18);
+        @include adaptiv-font(18, 14);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+
+        ul {
+            padding-left: rem(30);
+
+            li {
+                list-style: disc;
+                @include adaptiv-font(18, 14);
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+            }
+        }
+    }
+}

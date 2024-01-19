@@ -1,0 +1,40 @@
+.reviews {
+    padding: rem(50) 0;
+    background: linear-gradient(270deg, rgba(231, 66, 39, 0.00) 0%, rgba(231, 66, 39, 0.15) 43.67%, rgba(231, 66, 39, 0.15) 57.86%, rgba(231, 66, 39, 0.00) 100%);
+
+    &__title {
+        margin-bottom: rem(30);
+        text-align: center;
+        text-transform: none;
+    }
+    
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: rem(20);
+
+        @include media(991) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: rem(20);
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                background: transparent;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
