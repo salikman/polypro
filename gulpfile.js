@@ -42,7 +42,7 @@ export { svgSprive }
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
 
 // Основние задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(svgSprive, copy, html, scss, js, images))
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images, svgSprive))
 
 // Построение сценариев виполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
